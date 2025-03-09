@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cartão VISA</title>
     <style>
         *{
             margin: 0px;
@@ -19,7 +19,8 @@
             border: 5px  rgba(105, 233, 105, 0.572);
             border-style: ridge;
             position: relative;
-            display: inline-block;
+           
+            margin: auto;
             max-width: 500px;
             min-width: 150px;
             margin: auto;
@@ -36,20 +37,25 @@
   
    <main>
     <h1 style="text-align: center; font-variant: small-caps; font-size: 6vh; color: rgb(244, 248, 244);">Cartão VISA</h1> <br>
-    <form action="cadastro.html" method="post" autocomplete="off">
-       <br> <p style=" color: white;"> <label for="iname">Nome </label> <br><input type="text" name="name" id="iname"></p>
-        <br><p style="color: white"><label for="isobrenome">Sobrenome </label><br><input type="text" name="sobrenome" id="isobrenome"></p><br>
-        <p style="color: white;"><label for="iemail">Email </label><br> <input type="email" name="email" id="iemail"></p>     <br>
-        <p style="color: white;"><label for="ipass">Palavra-Passe </label><br> <input type="password" name="pass" id="ipass"></p> <br>
-     <p style="color: white;"><label for="idata">Data de nascimento</label><br><input type="date" name="data" id="idata"></p> <br>
-     <p style="color: white;"><label for="itelefone">Tell </label><br> <input type="tel" name="telefone" id="itelefone"></p> <br>
+    <form action="cadastro.html" method="post">
+       <br> <p style=" color: white;"> <label for="iname">Nome </label> <br><input type="text" name="name" id="iname" placeholder="Nome" minlength="10" required></p>
 
-     <p style="color: white"><label for="descricao">Faça um descrição sobre si</label></p> <textarea id="descricao" style="font-family: Arial, Helvetica, sans-serif; color: black; font-weight: 600; max-width: 80%; min-width: 60%; display: block;" name="tex" id="" cols="23" rows="8"></textarea><br>
+        <br><p style="color: white"><label for="isobrenome">Sobrenome </label><br><input type="text" name="sobrenome" id="isobrenome" minlength="20" placeholder="Sobrenome" required></p><br>
+
+        <p style="color: white;"><label for="iemail">Email </label><br> <input type="email" name="email" id="iemail" placeholder="Email" required ></p>     <br>
+
+        <p style="color: white;"><label for="ipass">Palavra-Passe </label><br> <input type="password" name="pass" id="ipass" placeholder="Palavra-passe" required></p> <br>
+
+     <p style="color: white;"><label for="idata">Data de nascimento</label><br><input type="date" name="data" id="idata" required></p> <br>
+
+     <p style="color: white;"><label for="itelefone">Tell </label><br> <input type="number" name="telefone" id="itelefone" required placeholder="Número do Telemóvel"></p> <br>
+
+     <p style="color: white"><label for="descricao" >Faça um descrição sobre si</label></p> <textarea id="descricao" style="font-family: Arial, Helvetica, sans-serif; color: black; font-weight: 600; max-width: 80%; min-width: 60%; display: block;" name="tex" id="" cols="23" rows="8" placeholder="Acerca de si mesmo" required></textarea ><br>
 <br>
      <p style="color: white"> <input type="radio" name="termos" id="itermos"> <label for="itermos">Aceita as nossas politicas de privacidade e nossos termos</label></p> <br>
-     <p style="color: white"><input type="radio" name="melhor" id="imelhor"> <label for="imelhor">Concordar com as nossas politicas de privacidade e que o Domingos Miala é o melhor.</label></p> <br>
+     <p style="color: white"><input type="radio" name="melhor" id="imelhor" required> <label for="imelhor">Concordar com as nossas politicas de privacidade e que o Domingos Miala é o melhor.</label></p> <br>
      
-     <p><input type="submit" value="Enviar" style="padding: 5px; background-color:rgb(92, 235, 92); border: 2px solid black; border-radius: 5px;color: rgb(25, 86, 227); font-weight: 900;"> <input type="reset" value="Apagar" style="padding: 5px; background-color:rgb(92, 235, 92); border: 2px solid black; border-radius: 5px;color: rgb(25, 86, 227); font-weight: 900;"></p>
+     <p><input type="submit" value="Enviar" required style="padding: 5px; background-color:rgb(92, 235, 92); border: 2px solid black; border-radius: 5px;color: rgb(25, 86, 227); font-weight: 900;"> <input type="reset" value="Apagar" required style="padding: 5px; background-color:rgb(92, 235, 92); border: 2px solid black; border-radius: 5px;color: rgb(25, 86, 227); font-weight: 900;"></p>
      
     </form>   
    </main>
